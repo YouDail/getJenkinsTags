@@ -1,0 +1,7 @@
+BasePath: /opt/code-backup/
+serviceName: com.hyphen.sops.srv.getPorjTags.prod
+registry:
+  type: consul
+  addr: 10.52.26.3:8500
+  ttl: 30s
+  interval: 10s

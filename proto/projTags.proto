@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service ProjTags {
+    rpc GetProjTags(ProjTagsRequest) returns (ProjTagsResponse) {}
+}
+
+
+message ProjTagsRequest {
+    repeated string  ProjUrl = 1;
+}
+
+
+message TagList {
+    string ProjectName =1;
+    repeated string Tags = 2;
+}
+
+
+
+message ProjTagsResponse {
+    repeated TagList  TagsList = 1;
+}
