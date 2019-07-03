@@ -22,7 +22,7 @@ deps:
 
 
 clean:
-	go clean -x getJenkinsTags/getJenkinsTags
+	go clean -x github.com/YouDail/getJenkinsTags/getJenkinsTags
 
 .PHONY: docker
 docker: build
