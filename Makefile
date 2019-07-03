@@ -6,7 +6,7 @@ all: build
 
 .PHONY: build
 build: deps
-	CGO_ENABLED=0 go build -o sops-getJinkensTags -v
+	CGO_ENABLED=0 go build -o getJenkinsTags -v
 
 .PHONY: test
 test:
@@ -22,8 +22,8 @@ deps:
 
 
 clean:
-	go clean -x gitlab.hfjy.com/infr/sops-getJinkensTags/sops-getJinkensTags
+	go clean -x getJenkinsTags/getJenkinsTags
 
 .PHONY: docker
 docker: build
-	docker build . -t sops-getJinkensTags:latest
+	docker build . -t getJenkinsTags:latest
