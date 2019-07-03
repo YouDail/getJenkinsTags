@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	resd, err := SortDir("/Users/LTD/go/src/gitlab.hfjy.com/infr/sops-gateway/")
+	resd, err := SortDir("/Users/mwc/go/src/github.com/")
 	if err != nil {
 		fmt.Println(err)
 	}
